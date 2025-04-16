@@ -1,0 +1,173 @@
+{
+    "player": {
+        "name": "hugo",
+        "health": 70,
+        "max_health": 100,
+        "attack": 10,
+        "gold": 85,
+        "inventory": [],
+        "temporary_buffs": {
+            "attack": 0,
+            "defense": 0,
+            "luck": 0,
+            "poison": 0,
+            "burn": 0,
+            "stunned": 0
+        },
+        "pet": null
+    },
+    "dungeon": {
+        "rooms": [
+            {
+                "description": "A narrow tunnel with bones scattered on the floor.",
+                "enemy": {
+                    "name": "Ancient Dragon",
+                    "health": 120,
+                    "attack": 25,
+                    "ability": "fire"
+                },
+                "item": null,
+                "trap": true,
+                "trap_damage": 10,
+                "puzzle": null
+            },
+            {
+                "description": "A damp corridor with strange whispers in the air.",
+                "enemy": {
+                    "name": "Orc",
+                    "health": 50,
+                    "attack": 10,
+                    "ability": null
+                },
+                "item": {
+                    "name": "Titan's Elixir",
+                    "effect": "defense",
+                    "value": 5,
+                    "duration": 6,
+                    "price": 50
+                },
+                "trap": false,
+                "trap_damage": 0,
+                "puzzle": null
+            },
+            {
+                "description": "A narrow tunnel with bones scattered on the floor.",
+                "enemy": {
+                    "name": "Dark Mage",
+                    "health": 35,
+                    "attack": 12,
+                    "ability": "drain"
+                },
+                "item": null,
+                "trap": false,
+                "trap_damage": 0,
+                "puzzle": {
+                    "question": "The more of me you take, the more you leave behind. What am I?",
+                    "answer": "footsteps"
+                }
+            },
+            {
+                "description": "A narrow tunnel with bones scattered on the floor.",
+                "enemy": {
+                    "name": "Demon",
+                    "health": 60,
+                    "attack": 15,
+                    "ability": "fire"
+                },
+                "item": {
+                    "name": "Large Healing Potion",
+                    "effect": "heal",
+                    "value": 100,
+                    "duration": null,
+                    "price": 50
+                },
+                "trap": false,
+                "trap_damage": 0,
+                "puzzle": null
+            },
+            {
+                "description": "A hall filled with ancient statues staring at you.",
+                "enemy": {
+                    "name": "Demon",
+                    "health": 60,
+                    "attack": 15,
+                    "ability": "fire"
+                },
+                "item": null,
+                "trap": false,
+                "trap_damage": 0,
+                "puzzle": null
+            }
+        ],
+        "shortcut_rooms": [
+            {
+                "description": "A treasure vault illuminated by golden light.",
+                "enemy": {
+                    "name": "Goblin",
+                    "health": 30,
+                    "attack": 5,
+                    "ability": null
+                },
+                "item": null,
+                "trap": false,
+                "trap_damage": 0,
+                "puzzle": {
+                    "question": "What has to be broken before you can use it?",
+                    "answer": "egg"
+                }
+            },
+            {
+                "description": "A narrow tunnel with bones scattered on the floor.",
+                "enemy": {
+                    "name": "Orc",
+                    "health": 50,
+                    "attack": 10,
+                    "ability": null
+                },
+                "item": null,
+                "trap": false,
+                "trap_damage": 0,
+                "puzzle": {
+                    "question": "The more of me you take, the more you leave behind. What am I?",
+                    "answer": "footsteps"
+                }
+            }
+        ],
+        "mystery_rooms": [
+            {
+                "description": "A dark chamber with glowing runes on the walls.",
+                "enemy": null,
+                "item": {
+                    "name": "Luck Charm",
+                    "effect": "luck",
+                    "value": 2,
+                    "duration": 5,
+                    "price": 60
+                },
+                "trap": true,
+                "trap_damage": 13,
+                "puzzle": null
+            },
+            {
+                "description": "A dark chamber with glowing runes on the walls.",
+                "enemy": null,
+                "item": {
+                    "name": "Minor Strength Potion",
+                    "effect": "attack",
+                    "value": 5,
+                    "duration": 3,
+                    "price": 20
+                },
+                "trap": true,
+                "trap_damage": 8,
+                "puzzle": {
+                    "question": "I have keys but open no locks. What am I?",
+                    "answer": "piano"
+                }
+            }
+        ],
+        "current_room_index": 0,
+        "in_shortcut": true,
+        "in_mystery": false
+    }
+}
